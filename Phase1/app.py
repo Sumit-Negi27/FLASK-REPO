@@ -1,4 +1,4 @@
-from flask import Flask 
+from flask import Flask ,request
 
 app=Flask(__name__)
 
@@ -9,3 +9,10 @@ def home():
 @app.route("/about")
 def about():
     return 'this page is about us'
+
+@app.route("/submit",methods=["GET","POST"])
+def submit():
+    if request.method=="POST":
+        return 'u send something'
+    else:
+        return 'u just visiting website'
