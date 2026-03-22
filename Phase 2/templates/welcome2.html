@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome Page</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body{
+            height:100vh;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+
+        .card{
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            padding:40px;
+            border-radius:15px;
+            text-align:center;
+            color:white;
+            width:420px;
+            box-shadow:0 8px 25px rgba(0,0,0,0.3);
+        }
+
+        h1{
+            margin-bottom:15px;
+        }
+
+        p{
+            margin:10px 0;
+            font-size:16px;
+        }
+
+        .username{
+            color:#ffd369;
+            font-weight:bold;
+        }
+
+        .btn{
+            margin-top:20px;
+            padding:10px 25px;
+            border:none;
+            border-radius:8px;
+            background:white;
+            color:#764ba2;
+            font-size:16px;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            background:#ffd369;
+            color:black;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="card">
+        <h1>🎉 Welcome <span class="username">{{username}}</span></h1>
+
+        <p>You have successfully logged in.</p>
+
+        <p>Hope you have a great experience using this system.</p>
+
+        <button class="btn" onclick="window.location.href='/'">
+            Logout
+        </button>
+    </div>
+
+</body>
+</html>
