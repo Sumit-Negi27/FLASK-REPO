@@ -1,7 +1,7 @@
 Soo basically here we made a simple login page by using flask 
 
 1. Login page show hoga
-2. User can enter Name and Password
+2. User can enter Name and Password (agr user name and password valid hoga tabh he welcome page open hogaa )
 3. Temprory  store
 4. redirect welcome page
 5. logout 
