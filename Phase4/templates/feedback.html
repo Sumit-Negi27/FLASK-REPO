@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}<h1>FEEDBACK FORM</h1>
+<form method="POST">
+  <div class="mb-3">
+    <label for="username" >Username</label><br>
+    <input type="text" name="username" placeholder="Enter your name: ">
+  </div>
+  <div class="mb-3">
+    <label for="message">Message</label>
+    <input type="text" name="message" placeholder="enter your feedback here" class="form-control" id="exampleInputPassword1">
+  </div>
+ <input type="submit" value="Submit">
+</form>
+{% endblock content %}
