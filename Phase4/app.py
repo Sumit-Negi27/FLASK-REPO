@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request , redirect , url_for
 
 app=Flask(__name__)
 
@@ -10,5 +10,8 @@ def form():
     if request.method=="POST":
         name= request.form.get('username')
         message= request.form.get('message')
-        return render_template('thankyou.html', username=name , message=message)
+        return redirect(url_for("thankyou"))
     return render_template('feedback.html')
+@app.route('/thankyou')
+def thankyou():
+    return render_template('thankyou.html')

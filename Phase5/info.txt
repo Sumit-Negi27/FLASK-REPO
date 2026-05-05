@@ -1,0 +1,5 @@
+Flask WTF WEB TEMPLATE form (FLASK EXTENSION h)
+iska kaam hota h 
+aapko built in vaildator provide krtaa h to make work easy
+form ko create krna validate krna and render krnaa
+Python mai Classes use krke kringe
